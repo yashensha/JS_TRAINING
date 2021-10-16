@@ -1,6 +1,5 @@
 # JS NOTES
 
-___
 
 #### 'Var' Declare
 
@@ -17,7 +16,7 @@ One time 1 value declare.
 
 >Semi colon `;` at end is not important
  
->'if' Synthax.
+#### if Synthax.
 
 ```
 if(num>5)
@@ -26,7 +25,7 @@ if(num>5)
 }
 ```
 
->'for' Synthax.
+#### 'for' Synthax.
 
 ```
 for(var i=0;i<10;i++)
@@ -35,5 +34,5 @@ for(var i=0;i<10;i++)
 }
 ```
 
->'function' Synthax.
+#### 'function' Synthax.
 
