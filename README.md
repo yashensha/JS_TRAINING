@@ -1,4 +1,4 @@
-#JS NOTES
+# JS NOTES
 
 ___
 
