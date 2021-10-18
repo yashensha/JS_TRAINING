@@ -10,29 +10,7 @@ DataType Automatically Detect.
 One time 1 value declare.
 
 ---
+<br>
 
->Print Output in Console
-`console.log()` 
-
->Semi colon `;` at end is not important
- 
-#### if Synthax.
-
-```
-if(num>5)
-{
-    console.log("Number is Greater than 5.")
-}
-```
-
-#### 'for' Synthax.
-
-```
-for(var i=0;i<10;i++)
-{
-    console.log(i)
-}
-```
-
-#### 'function' Synthax.
+[**<img src="https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s88-c-k-c0x00ffffff-no-rj" alt="drawing" width="15"/>  JS CRASH COURSE BY TRAVERSY MEDIA**](https://www.youtube.com/watch?v=hdI2bqOjy3c)
 
