@@ -1,20 +1,5 @@
 # JS NOTES
 
-## TABLE OF CONTENTS.
-
-1. [Variables & Data Types.](#Topic1)
-    1. [Data Types](#Topic1.1)
-    1. [Variable Declaration](#Topic1.2)
-        1.[var](#Topic1.2.1)
-        2.[let](#Topic1.2.2)
-        3.[const](#Topic1.2.3) 
- 
-<br>
-
-<br>
-
----
-
 ## Variables & Data Types.<a name="Topic1"></a>
 
 *you don't need to declare Data type in java.*
@@ -43,6 +28,17 @@ let z //this is also undefined
 **let**<a name="Topic1.2.2"></a> : `let` is same as var but `let` can be declared once, if you declare a `let` more than once, error will showen.
 
 **const**<a name="Topic1.2.3"></a> : `cont` is only once declared you can't change value of `const` by assigning.
+
+#### Two way to show variables in text.
+
+1. Concatenation (Old methord)
+```javascript
+console.log('My name is '+name+', i am '+age+' years old.')
+```
+2. Template String
+```javascript
+const hello = `My name is ${name}, i am ${age} years old.`
+```
 
 
 #### NOTES:-
