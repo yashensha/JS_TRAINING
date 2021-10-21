@@ -257,7 +257,7 @@ for(let i = 0 ; i<=todos.length;i++)
 }
 ```
 
-*and also, *
+*and also,*
 
 ```javascript
 for(let todo of todos){
