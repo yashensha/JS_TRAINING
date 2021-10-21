@@ -272,6 +272,7 @@ for(let todo of todos){
 ```javascript
 todos.forEach(function(todo){
     console.log(todo.text)
+    })
 ```
 
 #### Map
