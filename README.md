@@ -299,3 +299,103 @@ const todoComplated = todos.filter(function(todo){
 
 console.log(todoComplated)
 ```
+
+## Contisionals
+
+### IF
+
+```js
+const x = 30
+const y = 20
+
+// // == datatype not cheacked
+// // === datatype also checked
+
+if (x > 5 && y > 10){
+    console.log('x is 10 or y is more than 5')
+}
+else if(x>10)
+{
+    console.log('x is greater than 10')
+}
+else{
+    console.log('x is lesser than 10')
+}
+```
+
+*use '?' as then*
+
+```js
+const x = 11
+const color = x > 10 ? 'red' : 'blue' //then
+```
+
+### Switch 
+
+```js
+switch (color){
+    case 'red':
+        console.log('color is red')
+        break; 
+    case 'blue':
+        console.log('color is blue')
+        break;
+    default:
+        console.log('color is not blue or red')
+        break;
+}
+```
+
+## Functions
+
+*We can make user defined functions in javascript*
+```js
+// this is a function to add two numbers
+function addNums(num1, num2) {
+return num1+num2
+}
+console.log(addNums(5,3))
+
+```
+
+## Arrow Functions
+
+```js
+const addNums1 = (num1,num2)=>
+console.log(num1+num2)
+
+addNums1(4,5)
+```
+*we can use this arrow function in forEach*
+
+```js
+todo.forEach((todo) => console.log(todo))
+```
+
+## Object Oriented Program
+
+### Class
+
+```js
+class Person{
+
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName
+        this.lastName = lastName
+        this.dob = new Date(dob)
+    }
+    getBirthYear() {
+        return this.dob.getFullYear()
+    }
+    getFullName(){
+        return `${this.firstName} ${this.lastName}`
+    }
+    }
+// Instantiate
+
+const person1 = new Person('John','Shelby','4-5-2004')
+const person2 = new Person('Thomas','Shelby','4-5-2014')
+```
+
+## DOM
+
