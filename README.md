@@ -203,3 +203,98 @@ console.log(todos[2].text )
 const todoJSON = JSON.stringify(todos)
 console.log(todoJSON)
 ```
+
+## Loops 
+
+### For Loop
+
+```javascript
+for(let i = 0; i <=10; i++){
+    console.log(`for loop ${i}`)
+}
+```
+### While Loop
+
+```javascript
+let i = 0
+while(i<=20)
+{
+    console.log(`for loop ${i}`)
+    i++
+}
+```
+*Here is an object array*
+
+```javascript
+const todos = [{
+    id : 1,
+    text:'take out the trash.',
+    isComplated:true
+},
+{
+    id : 2,
+    text:'Meeting',
+    isComplated:true
+},
+{
+    id : 3,
+    text:'see dentist.',
+    isComplated:true
+},
+{
+    id : 4,
+    text:'out to play.',
+    isComplated:false
+}]
+```
+
+#### You can display them using id by loop
+
+```javascript
+for(let i = 0 ; i<=todos.length;i++)
+{
+    console.log(todos[i].text)
+}
+```
+
+*and also, *
+
+```javascript
+for(let todo of todos){
+    console.log(todo.id, todo.text,todo.isComplated)
+
+}
+```
+*We can use 3 methors to display object array*
+
+#### forEach
+
+```javascript
+todos.forEach(function(todo){
+    console.log(todo.text)
+```
+
+#### Map
+
+```javascript
+const todoText = todos.map(function(todo){
+    console.log(todo.text)
+    return todo.text
+
+})
+
+console.log(todoText)
+```
+
+#### Filter
+
+```javascript
+const todoComplated = todos.filter(function(todo){
+    return todo.isComplated === false
+
+}).map(function(todo){
+    return todo.text
+})
+
+console.log(todoComplated)
+```
