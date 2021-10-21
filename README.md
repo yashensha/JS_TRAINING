@@ -77,7 +77,49 @@ console.log(s.split(''))
 const d = 'it, technology, code, java, html, css, php'
 console.log(d.split(', '))
 ```
+## Array
 
+>Array - variable that hold multiple value.Unlike c/c++, JS can hold various datatype in single array.
 
+**Synthax**
 
- 
+```javascript
+const arrayName = new Array(1,'Hello',true,5,6,4,5)
+```
+**Accesing array elements**
+
+```javascript
+console.log(`i need ${fruits[2]} and ${fruits[0]}`)//index starts at 0.
+```
+
+### Push element to array
+
+```javascript
+fruits.push('carrot')
+```
+
+### Add element to front of an array
+
+```javascript
+fruits.unshift('grapes')
+```
+
+### Pop from an array
+
+```javascript
+fruits.pop()
+```
+
+### Check if Array.
+
+```javascript
+console.log(Array.isArray(fruits)) //true
+console.log(Array.isArray('dgsg')) //false
+```
+
+### Check index of given array element.
+
+```javascript
+console.log(fruits.indexOf('orange'))
+```
+## OBJECT
