@@ -122,4 +122,84 @@ console.log(Array.isArray('dgsg')) //false
 ```javascript
 console.log(fruits.indexOf('orange'))
 ```
-## OBJECT
+## Object
+
+>**Object**: Objects are variables too. But objects can contain many values.
+
+**example**
+
+```javascript
+const person = {
+    firstName: 'John',
+    lastName:'Shelby',
+    age: 30,
+    hobbies:['Singing', 'Hunting'],
+    
+    address:{
+        street:'small heath',
+        city:'bellingham',
+        state:'England'
+    }
+}
+```
+
+### Accesing elements from object
+
+```javascript
+console.log(person.firstName,person.lastName)
+console.log(person.hobbies[2])
+console.log(person.address.city)
+```
+
+### Pulling out from an object.
+
+```javascript
+const {firstName,lastName,address: {city}} = person
+```
+
+### Adding values to an object
+
+```javascript
+person.email = 'john@gmail.com'
+```
+
+## Object Array
+
+**example**
+
+```javascript
+const todos = [{
+    id : 1,
+    text:'take out the trash.',
+    isComplated:true
+},
+{
+    id : 2,
+    text:'Meeting',
+    isComplated:true
+},
+{
+    id : 3,
+    text:'see dentist.',
+    isComplated:true
+},
+{
+    id : 4,
+    text:'out to play.',
+    isComplated:false
+}]
+
+```
+
+### Accesing value.
+
+```javascript
+console.log(todos[2].text )
+```
+
+### Convert object to JSON
+
+```javascript
+const todoJSON = JSON.stringify(todos)
+console.log(todoJSON)
+```
