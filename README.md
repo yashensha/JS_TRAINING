@@ -399,3 +399,116 @@ const person2 = new Person('Thomas','Shelby','4-5-2014')
 
 ## DOM
 
+#### Single element selector
+
+```js
+console.log(document.getElementById('my-form'))
+console.log(document.querySelector('h1'))
+```
+
+#### Multiple element selector
+
+```js
+document.getElementsByClassName('item')
+document.querySelectorAll('.item')
+```
+
+#### Remove 
+
+```js
+ul.remove()
+```
+
+#### Remove first Child
+
+```js
+ul.firstElementChild.remove()
+```
+
+#### Remove last Child
+
+```js
+ul.lastElementChild.remove()
+```
+#### Remove using index
+
+```js
+ul.children[1].remove()
+```
+
+#### Manipulate child
+
+```js
+ul.firstElementChild.textContent = 'HELLO'
+ul.children[1].textContent = 'HElp'
+```
+
+#### Using innerHTML
+
+```js
+ul.lastElementChild.innerHTML = '<h4>Brad pitt</h4>'
+```
+
+#### Add EVENTLITSENER 
+
+```js
+const btn = document.querySelector('.btn')
+btn.addEventListener('click', (e) => {
+    e.preventDefault()
+    //Changing style
+    document.querySelector('#my-form').style.background = '#ccc'
+    
+    // add a class using js 
+
+    document.querySelector('body').classList.add('bg-dark')
+    document.querySelector('.items').lastElementChild.innerHTML = '<h1>dggg</h1>'
+})
+
+```
+
+#### Change style 
+
+```js
+btn.style.background = '#e66f45'
+```
+
+### Making a validator
+
+```js
+
+const myForm = document.querySelector('#my-form')
+const nameInput = document.querySelector('#name')
+const emailInput = document.querySelector('#email')
+const msg = document.querySelector('.msg')
+const userList = document.querySelector('#users')
+
+myForm.addEventListener('submit', onSubmit)
+
+function onSubmit(e) {
+    e.preventDefault()
+
+if(nameInput.value === '' || emailInput.value === '')
+{
+    msg.innerHTML = 'please enter all fields'
+    msg.classList.add('error')
+
+    setTimeout(()=> msg.remove(), 3000)
+}
+else{
+    console.log(nameInput.value,'-', emailInput.value)
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`))
+    userList.appendChild(li)
+
+    //clear fields
+    nameInput.value = ''
+    emailInput.value = ''
+}
+}
+
+```
+
+
+
+
+
